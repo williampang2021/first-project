@@ -1,0 +1,35 @@
+{
+  "name": "react-app-ts",
+  "version": "0.0.1",
+  "description": "react项目",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "dev": "webpack-build-tool run dev -t",
+    "dist": "webpack-build-tool run dist -t",
+    "analyzer": "webpack-build-tool run analyzer",
+    "start": "npm run dev"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "/node_modules",
+      "dist/**"
+    ],
+    "globals": [
+      "location"
+    ]
+  },
+  "dependencies": {
+    "@williampang/utils-base": "*",
+    "@williampang/react-ui-lib": "*",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "redux-zero": "^5.1.7",
+    "web-vitals": "^1.1.0"
+  },
+  "devDependencies": {
+    "@williampang/webpack-build-tool": "^0.1.10"
+  }
+}

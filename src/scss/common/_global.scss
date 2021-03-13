@@ -1,0 +1,73 @@
+﻿@charset "utf-8";
+@import "reset";
+@import "fontstyle";
+@import 'mixin';
+@import 'variable';
+@import "media";
+@import "iconfont";
+
+//公用
+// .w-750{
+//   width: 100%;
+//   max-width: 750px;
+//   min-width: 320px;
+//   margin: 0 auto;
+// }
+.clearfix { @include clearfix; }
+.fl { float: left; }
+.fr { float: right; }
+// .nofloat { float: none; }
+.ell { @include ell; }
+// .line-wrap{@include line-wrap}
+// .strong { font-weight: bold; }
+// .uppercase { text-transform: uppercase; }
+// .border-radius { border: 0; }
+// .cursor-pointer { cursor: pointer; }
+// a { text-decoration: none; color: $diyColor; }
+// .overflow-y { overflow-x: hidden; overflow-y: auto; }
+.button { background-color: $diyColor; color: #fff; border-color: transparent; cursor: pointer;padding:.1rem }
+// .button-gray{background-color:#8a8a8a !important;}
+// .hidden { display: none; }
+.none { display: none !important; }
+// .show { display: block; }
+// .fn-hide { display: none; }
+// .fn-show { display: block !important; }
+// .p-relative {position: relative;}
+// .p-absolute {position: absolute;}
+// .ovh { overflow: hidden;}
+// .ova { overflow: auto;}
+// .img-center{display: block;margin: 0 auto;}
+// .vis-hide { visibility: hidden; }
+// .no-selected { @include userSelect; }
+// .tac { text-align: center; }
+// .tal { text-align: left!important;}
+// .tar { text-align: right; }/*  */
+// .taj {text-align: justify; }
+// .inline-block{ display: inline-block;}
+
+/*常用字体大小*/
+// @for $i from 12 through 48 {
+//   .f#{$i} { font-size: 1px * $i; } 
+// }
+
+/*个性化颜色*/
+.diy_color { color: $diyColor!important;}
+.diy_background{ background-color: $diyColor!important;}
+
+/* 常用数值 */
+// @for $i from 0 through 20 {
+//   .mt#{$i*5} { margin-top: 5px * $i !important; }
+//   .mr#{$i*5} { margin-right: 5px * $i !important; }
+//   .mb#{$i*5} { margin-bottom: 5px * $i !important; }
+//   .ml#{$i*5} { margin-left: 5px * $i !important; }  
+
+//   .pt#{$i*5} { padding-top: 5px * $i !important; }
+//   .pr#{$i*5} { padding-right: 5px * $i !important; }
+//   .pb#{$i*5} { padding-bottom: 5px * $i; }
+//   .pl#{$i*5} { padding-left: 5px * $i !important; }  
+// }
+
+a:link{text-decoration:none; } 
+a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+a:active{text-decoration:none;}

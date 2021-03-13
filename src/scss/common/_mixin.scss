@@ -1,0 +1,74 @@
+﻿@charset "utf-8";
+
+//清除浮动
+@mixin clearfix {
+  &:before, &:after { content: ""; display: table}
+  &:after { clear: both;}
+}
+
+//超过的文字就显示...
+@mixin ell {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+//文字自动换行
+@mixin line-wrap{
+    overflow: hidden;
+    word-wrap: normal;
+    word-break: break-all;
+  }
+
+//禁止选择文字
+@mixin userSelect {
+    -moz-user-select: none; /* firefox */
+    -webkit-user-select: none; /* webkit */
+    -ms-user-select: none; /* IE10 */
+    -khtml-user-select: none; /* old */
+    user-select: none;
+}
+// flexbox 布局
+@mixin flexbox {
+    display: -webkit-flex;
+    display: flex;
+    overflow: hidden;
+}
+// flex 均分
+@mixin flex {
+    display: block;
+    width: 100%;
+    -webkit-flex: 1;
+    flex: 1;
+}
+// 取消 flex 均分
+@mixin flex_none {
+    flex: none;
+}
+//文字多行垂直居中
+@mixin font-vertical($height){
+    height:$height ;
+    &:before{
+        content:"";
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+    }
+    .font-vertical{
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+//上下居中
+@mixin pos-vertical{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+//左右居中
+@mixin pos-center{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
