@@ -11,7 +11,7 @@ function App (props = {}) {
     <div style={{ padding: 20 }}>
       {/* <Header /> */}
       <div className='home'>
-        <h2>Hello world! Good.</h2>
+        <h2>Hello world! Good Job.</h2>
 
       </div>
     </div>
