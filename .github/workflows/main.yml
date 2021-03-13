@@ -35,7 +35,6 @@ jobs:
           FOLDER: dist
           BUILD_SCRIPT: npm install && npm run dist
 
-
           
           
           
